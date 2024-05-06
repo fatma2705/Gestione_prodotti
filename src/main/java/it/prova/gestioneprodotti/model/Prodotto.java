@@ -45,7 +45,7 @@ public class Prodotto {
 	}
 
 	public Prodotto(Long id, String nome, String descrizione, String marca, Integer prezzo, boolean disponibile,
-			LocalDate dataCreazioneProdotto, LocalDateTime createDateTime, LocalDateTime updateDateTime) {
+			LocalDate dataCreazioneProdotto) {
 		this.id = id;
 		this.nome = nome;
 		this.descrizione = descrizione;
@@ -53,8 +53,13 @@ public class Prodotto {
 		this.prezzo = prezzo;
 		this.disponibile = disponibile;
 		this.dataCreazioneProdotto = dataCreazioneProdotto;
-		this.createDateTime = createDateTime;
-		this.updateDateTime = updateDateTime;
+		
+	}
+
+	public Prodotto(String nome, String descrizione, String marca) {
+		this.nome = nome;
+		this.descrizione = descrizione;
+		this.marca = marca;
 	}
 
 	public Long getId() {
