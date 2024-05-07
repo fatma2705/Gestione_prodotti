@@ -16,7 +16,7 @@ public class ListProdottiServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		try {
-			request.setAttribute("listArticoliAttribute", MyServiceFactory.getProdottoServiceInstance().list());
+			request.setAttribute("listProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
 		} catch (Exception e) {
 			//qui ci andrebbe un messaggio nei file di log costruito ad hoc se fosse attivo
 			e.printStackTrace();
