@@ -49,7 +49,7 @@
                             </thead>
                             <tbody>
                                 <% 
-                                List<Prodotto> listaProdotti = (List<Prodotto>) request.getAttribute("listaProdottiAttribute");
+                                List<Prodotto> listaProdotti = (List<Prodotto>) request.getAttribute("listProdottiAttribute");
                                 if (listaProdotti != null) {
                                     for (Prodotto item : listaProdotti) {
                                 %>
