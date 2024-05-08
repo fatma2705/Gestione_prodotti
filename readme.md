@@ -46,7 +46,7 @@ Per eseguire l'applicazione, è necessario disporre di:
 ## Contributi
 Se vuoi contribuire a questo progetto, fai pure una fork del repository, apri un pull request e descrivi le modifiche proposte.
 
-##Licenza
+## Licenza
 Questo progetto è distribuito con licenza MIT License.
 
 ##  Sviluppato da Fatma - https://github.com/fatma2705
