@@ -29,11 +29,11 @@ public class ExecuteDeleteProdottoServlet extends HttpServlet {
 		}
 		try {
 			MyServiceFactory.getProdottoServiceInstance().delete(idProdottoToRemove);
-			request.setAttribute("listaProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
+			request.setAttribute("listProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("errorMessage", "Attenzione si è verificato un errore");
-			request.getRequestDispatcher("/index.jsp").forward(request, response);
+			request.getRequestDispatcher("/prodotto/errorPage.jsp").forward(request, response);
 			return;
 		}
 

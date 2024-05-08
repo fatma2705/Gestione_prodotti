@@ -1,10 +1,11 @@
 <%@page import="java.time.format.DateTimeFormatter"%>
 <%@page import="it.prova.gestioneprodotti.model.Prodotto"%>
 <%@page import="java.util.List"%>
-<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <!doctype html>
 <html lang="it" class="h-100" >
 <head>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" errorPage="errorPage.jsp" %>
+
     <!-- Common imports in pages -->
     <jsp:include page="../header.jsp" />
     <title>Lista Elementi</title>

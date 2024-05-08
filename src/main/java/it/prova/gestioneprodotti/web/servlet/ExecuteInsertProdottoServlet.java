@@ -43,12 +43,12 @@ public class ExecuteInsertProdottoServlet extends HttpServlet {
 
 		try {
 			MyServiceFactory.getProdottoServiceInstance().insert(prodottoInstance);
-			request.setAttribute("listaProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
+			request.setAttribute("listProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
 			request.setAttribute("successMessage", "Operazione effettuata con successo");
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("errorMessage", "Attenzione si è verificato un' errore. ");
-			request.getRequestDispatcher("/index.jsp").forward(request, response);
+			request.getRequestDispatcher("prodotto/errorPage.jspp").forward(request, response);
 			return;
 		}
 

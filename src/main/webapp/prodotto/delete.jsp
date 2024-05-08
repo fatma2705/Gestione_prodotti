@@ -4,6 +4,9 @@
 <html lang="it" class="h-100" >
 	 <head>
 	 
+	 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" errorPage="errorPage.jsp" %>
+	 
+	 
 	 	<!-- Common imports in pages -->
 	 	<jsp:include page="../header.jsp" />
 	   

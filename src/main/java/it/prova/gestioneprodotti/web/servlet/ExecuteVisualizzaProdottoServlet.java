@@ -33,7 +33,7 @@ public class ExecuteVisualizzaProdottoServlet extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("errorMessage", "Attenzione si è verificato un errore.");
-			request.getRequestDispatcher("/index.jsp").forward(request, response);
+			request.getRequestDispatcher("/prodotto/errorPage.jsp").forward(request, response);
 			return;
 		}
 

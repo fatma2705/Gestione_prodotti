@@ -4,6 +4,9 @@
 <html lang="it" class="h-100" >
 	 <head>
 	 
+	 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" errorPage="errorPage.jsp" %>
+	 
+	 
 	 	<!-- Common imports in pages -->
 	 	<jsp:include page="../header.jsp" />
 	   
@@ -71,7 +74,7 @@
 								
 								<div class="col-md-6">
 									<label for="disponibile" class="form-label">Disponibile <span class="text-danger">*</span></label>
-									<input type="text" name="disponibile" id="disponibile" class="form-control" placeholder="Inserire true se il prodotto è disponibile false se no" >
+									<input type="text" name="disponibile" id="disponibile" class="form-control" placeholder="Inserire true se il prodotto Ã¨ disponibile false se no" >
 								</div>
 								
 								<div class="col-md-3">
