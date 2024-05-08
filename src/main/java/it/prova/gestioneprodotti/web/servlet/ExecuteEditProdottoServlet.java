@@ -39,8 +39,8 @@ public class ExecuteEditProdottoServlet extends HttpServlet {
 		}
 
 		try {
-			MyServiceFactory.getProdottoServiceInstance().insert(prodottoInstance);
-			request.setAttribute("listaProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
+			MyServiceFactory.getProdottoServiceInstance().update(prodottoInstance);
+			request.setAttribute("listProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
 			request.setAttribute("successMessage", "Operazione effettuata con successo");
 		} catch (Exception e) {
 			e.printStackTrace();

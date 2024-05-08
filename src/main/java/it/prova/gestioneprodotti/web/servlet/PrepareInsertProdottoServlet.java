@@ -14,12 +14,13 @@ import it.prova.gestioneprodotti.model.Prodotto;
 public class PrepareInsertProdottoServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
-		
-		//metto un bean 'vuoto' in request perché per la pagina risulta necessario
-				request.setAttribute("insert_prodotto_attr", new Prodotto());
-				request.getRequestDispatcher("/prodotto/insert.jsp").forward(request, response);
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		// metto un bean 'vuoto' in request perché per la pagina risulta necessario
+		request.setAttribute("insert_prodotto_attr", new Prodotto());
+		request.getRequestDispatcher("/prodotto/insert.jsp").forward(request, response);
 
 	}
 

@@ -53,7 +53,7 @@ public class Prodotto {
 		this.prezzo = prezzo;
 		this.disponibile = disponibile;
 		this.dataCreazioneProdotto = dataCreazioneProdotto;
-		
+
 	}
 
 	public Prodotto(String nome, String descrizione, String marca) {

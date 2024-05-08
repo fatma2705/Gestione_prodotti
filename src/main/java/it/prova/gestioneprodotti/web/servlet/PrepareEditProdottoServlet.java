@@ -19,10 +19,10 @@ public class PrepareEditProdottoServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String parametroIdArticoloToEdit = request.getParameter("idProdotto");
-		Long idProdottoToEdit = Long.parseLong(parametroIdArticoloToEdit);
+		String parametroIdProdottoToEdit = request.getParameter("idProdotto");
+		Long idProdottoToEdit = Long.parseLong(parametroIdProdottoToEdit);
 
-		if (!NumberUtils.isCreatable(parametroIdArticoloToEdit)) {
+		if (!NumberUtils.isCreatable(parametroIdProdottoToEdit)) {
 			request.setAttribute("errorMessage", "Attenzione si è verificato un errore");
 			request.getRequestDispatcher("/index.jsp").forward(request, response);
 			return;

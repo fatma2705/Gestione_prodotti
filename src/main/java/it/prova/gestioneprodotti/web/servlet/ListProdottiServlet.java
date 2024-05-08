@@ -13,12 +13,13 @@ import it.prova.gestioneprodotti.service.MyServiceFactory;
 @WebServlet("/ListProdottiServlet")
 public class ListProdottiServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		try {
 			request.setAttribute("listProdottiAttribute", MyServiceFactory.getProdottoServiceInstance().list());
 		} catch (Exception e) {
-			//qui ci andrebbe un messaggio nei file di log costruito ad hoc se fosse attivo
+			// qui ci andrebbe un messaggio nei file di log costruito ad hoc se fosse attivo
 			e.printStackTrace();
 			request.setAttribute("errorMessage", "Attenzione si è verificato un errore.");
 			request.getRequestDispatcher("/index.jsp").forward(request, response);
@@ -26,6 +27,5 @@ public class ListProdottiServlet extends HttpServlet {
 		}
 		request.getRequestDispatcher("/prodotto/results.jsp").forward(request, response);
 	}
-	
 
 }
